@@ -2,6 +2,7 @@ import "./App.css";
 import hot_weather_image from "./Images/hot_weather.webp";
 import cold_weather_image from "./Images/cold_weather.jpg";
 import cloud_image from "./Images/Clouds.webp";
+import Description from "./Components/Description";
 function App() {
   return (
     <div
@@ -25,8 +26,8 @@ function App() {
         </div>
       </div>
 
+<Description/>
 
-      
     </div>
    </div>
     </div>
