@@ -7,8 +7,14 @@ function App() {
       className="app"
       style={{ backgroundImage: `url(${cold_weather_image})` }}
     >
-      <h1>helloo jio</h1>f
-      .classNa
+   <div className="overlay">
+    <div className="container">
+      <div className="section section-inputs">
+        <input type="text" name="city" placeholder="Enter the city Name" />
+        <button>℉</button>
+      </div>
+    </div>
+   </div>
     </div>
   );
 }
