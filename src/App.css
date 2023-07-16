@@ -8,6 +8,7 @@
   height: 100vh;
   background-position: center;
   background-size: cover;
+  background-color: black;
 }
 .overlay {
   width: 100%;
@@ -92,4 +93,40 @@
 
 .temperature>h1{
   font-size: 60px;
+}
+.section-desc{
+  margin-bottom: 99px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2.5rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.card-data{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.card-data>small{
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1025px){
+  .section-desc{
+    grid-template-columns: 1fr 1fr;
+  }
 }
