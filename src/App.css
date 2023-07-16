@@ -30,7 +30,7 @@
 
 .section{
   width: 100%;
-  border-radius: 0.2 rem;
+  border-radius: 0.3 rem;
   padding: 1rem;
   color: white;
 }
@@ -108,7 +108,7 @@
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.75);
   padding: 1rem;
-  border-radius: 0.4rem;
+  border-radius: 0.75rem;
 }
 
 .card-data{
@@ -129,4 +129,23 @@
   .section-desc{
     grid-template-columns: 1fr 1fr;
   }
+}
+
+@media screen and (max-width: 440px){
+  .section-desc{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media screen and (max-width: 550px ){
+  .section-inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: space-between;
+  }
+  
 }
